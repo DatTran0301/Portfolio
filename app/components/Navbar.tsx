@@ -194,7 +194,16 @@ export default function Navbar() {
               Contact Me
             </Link>
             <button className="w-full mt-3 bg-black text-white px-4 py-2.5 rounded-lg font-medium hover:bg-gray-800 transition text-sm">
-              Download CV ↓
+              <Dropdown
+                menu={{ items }}
+                placement="bottom"
+                arrow={{ pointAtCenter: true }}
+              >
+                <div>
+                  <span>Download CV </span>
+                  <span className="text-sm">↓</span>
+                </div>
+              </Dropdown>
             </button>
           </div>
         </div>
