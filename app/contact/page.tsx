@@ -181,18 +181,19 @@ export default function ContactPage() {
           <div className="flex flex-col justify-center order-1 lg:order-2 space-y-3">
             <div>
               <h1 className="text-4xl sm:text-4xl lg:text-5xl font-bold text-black mb-4 leading-tight">
-                Let's{" "}
+                Let's {""}
                 <span className="font-black text-white [-webkit-text-stroke:1.5px_black]">
-                  talk
+                  create
                 </span>{" "}
-                for <br />
-                Something special
+                <br />
+                something meaningful.
               </h1>
             </div>
 
             <p className="text-gray-600 text-base sm:text-lg leading-relaxed max-w-md">
-              I seek to push the limits of creativity to create high-engaging,
-              user-friendly, and memorable interactive experiences.
+              I enjoy building games, web applications, and digital experiences
+              that people love to use. If you're looking for a developer or
+              simply want to connect, feel free to reach out.
             </p>
 
             {/* Contact Details */}

@@ -3,6 +3,34 @@
 import Link from "next/link";
 import { useState } from "react";
 import { usePathname } from "next/navigation";
+import { Button, Dropdown, MenuProps } from "antd";
+
+const items: MenuProps["items"] = [
+  {
+    key: "1",
+    label: (
+      <a
+        target="_blank"
+        rel="noopener noreferrer"
+        href="https://drive.google.com/file/d/1IyLPac61x9wnAkR5vNoPEPknMUoRdpJK/view?usp=sharing"
+      >
+        Unity Developer
+      </a>
+    ),
+  },
+  {
+    key: "2",
+    label: (
+      <a
+        target="_blank"
+        rel="noopener noreferrer"
+        href="https://drive.google.com/file/d/16gqhZxEDytecwtUQjKxcfN18OWEODzsw/view?usp=drive_link"
+      >
+        Frontend Developer
+      </a>
+    ),
+  },
+];
 
 export default function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -112,7 +140,16 @@ export default function Navbar() {
 
         {/* Download CV Button - Desktop */}
         <button className="hidden md:flex bg-black text-white px-4 lg:px-6 py-2.5 rounded-lg font-medium hover:bg-gray-800 hover:shadow-lg transform hover:scale-105 transition-all duration-300 items-center gap-2 text-sm lg:text-base">
-          Download CV <span className="text-sm">↓</span>
+          <Dropdown
+            menu={{ items }}
+            placement="bottom"
+            arrow={{ pointAtCenter: true }}
+          >
+            <div>
+              <span>Download CV </span>
+              <span className="text-sm">↓</span>
+            </div>
+          </Dropdown>
         </button>
       </div>
 
@@ -139,7 +176,7 @@ export default function Navbar() {
               Skills
             </Link>
             <Link
-              href="/#projects"
+              href="/projects"
               className="block text-gray-700 hover:text-black font-medium py-2 transition"
               onClick={() => setIsMenuOpen(false)}
             >

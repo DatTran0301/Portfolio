@@ -7,6 +7,7 @@ interface Experience {
   icon: React.ReactNode;
   name: string;
   years: string;
+  description: string;
 }
 
 const experiencesData: Experience[] = [
@@ -93,11 +94,11 @@ export default function ExperiencePage() {
                   <div className="bg-white w-14 h-14 rounded-xl p-2 mr-4 flex items-center justify-center">
                     {experience.icon}
                   </div>
-                  <h3 className="text-xl font-bold text-white">
+                  <h3 className="text-3xl font-bold text-white">
                     {experience.name}
                   </h3>
                 </div>
-                <p className="text-white">{experience.years}</p>
+                <p className="text-white text-xl">{experience.years}</p>
               </div>
               <p className="text-gray-400 mt-4">{experience.description}</p>
             </div>

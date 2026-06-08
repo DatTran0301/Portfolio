@@ -47,6 +47,33 @@ const skillsData: Skill[] = [
   { id: 14, name: "JavaScript", icon: <IconJavascript /> },
   { id: 15, name: "HTML", icon: <IconHtml className="w-30 h-30" /> },
   { id: 16, name: "CSS", icon: <IconCss className="w-30 h-30" /> },
+  {
+    id: 17,
+    name: "Photoshop",
+    icon: (
+      <div className="bg-black text-white p-3 rounded-xl flex items-center">
+        Ps
+      </div>
+    ),
+  },
+  {
+    id: 5,
+    name: "MUI Theme",
+    icon: (
+      <div className="bg-black text-white p-3 rounded-xl flex items-center">
+        MUI
+      </div>
+    ),
+  },
+  {
+    id: 5,
+    name: "Ant Design",
+    icon: (
+      <div className="bg-black text-white p-3 rounded-xl flex items-center">
+        Ant
+      </div>
+    ),
+  },
 ];
 
 export default function SkillsPage() {
@@ -68,6 +95,7 @@ export default function SkillsPage() {
         <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-4 sm:gap-6 lg:gap-8">
           {skillsData.map((skill) => (
             <div
+              id={skill.id.toString()}
               key={skill.id}
               className="group h-60 bg-white border-2 border-black rounded-lg p-6 sm:p-8 flex flex-col items-center justify-center text-center hover:shadow-lg hover:scale-105 transition-all duration-300 cursor-pointer"
             >

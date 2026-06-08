@@ -10,9 +10,9 @@ export default function Home() {
       {/* Hero Section */}
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-center py-12 sm:py-16 lg:py-28">
-          <div className="flex items-center justify-center order-1 lg:order-2 animate-float mt-8 lg:mt-0">
-            <div>
-              <BgHome className="w-full" />
+          <div className="flex items-center justify-center order-1 lg:order-2 mt-8 lg:mt-0">
+            <div className="sm:w-1/4 xl:w-full md:w-1/2 flex justify-center">
+              <BgHome />
             </div>
           </div>
 
@@ -24,6 +24,16 @@ export default function Home() {
               </h1>
               <h2 className="text-3xl sm:text-4xl lg:text-5xl xl:text-6xl font-bold text-black flex items-center gap-2">
                 <span>Unity</span>
+                <span className="font-black text-white [-webkit-text-stroke:1.5px_black]">
+                  Developer
+                </span>
+              </h2>
+              <h1 className="text-3xl sm:text-4xl lg:text-5xl xl:text-6xl font-light text-black leading-tight">
+                {" "}
+                &{" "}
+              </h1>
+              <h2 className="text-3xl sm:text-4xl lg:text-5xl xl:text-6xl font-bold text-black flex items-center gap-2">
+                <span>Frontend</span>
                 <span className="font-black text-white [-webkit-text-stroke:1.5px_black]">
                   Developer
                 </span>
@@ -40,12 +50,8 @@ export default function Home() {
 
             {/* Bio */}
             <p className="text-sm sm:text-base text-gray-600 leading-relaxed">
-              Unity Developer with 4+ years of experience developing mobile
-              games, multiplayer games, arcade games, and AR applications.
-              Strong expertise in Unity, C#, multiplayer architecture, Firebase,
-              SDK integrations, Android/iOS deployment, and cross-functional
-              collaboration. Experienced in delivering commercial products from
-              development to production release on Google Play and App Store.
+              4+ Years of Experience in Game Development. Building mobile games,
+              AR applications, and modern web - app experiences.
             </p>
 
             {/* Social Icons */}
