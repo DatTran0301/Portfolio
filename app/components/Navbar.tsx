@@ -158,6 +158,13 @@ export default function Navbar() {
         <div className="md:hidden border-t border-gray-100 bg-white">
           <div className="px-4 py-3 space-y-2">
             <Link
+              href="/experience"
+              className="block text-gray-700 hover:text-black font-medium py-2 transition"
+              onClick={() => setIsMenuOpen(false)}
+            >
+              Experience
+            </Link>
+            <Link
               href="/about"
               className="block text-gray-700 hover:text-black font-medium py-2 transition"
               onClick={() => setIsMenuOpen(false)}
