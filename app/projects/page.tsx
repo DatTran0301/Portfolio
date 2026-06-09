@@ -18,7 +18,7 @@ const projectsWorkedOnData = [
     description:
       "A casual 1v1 multiplayer Match-3 game with high-quality 2D graphics, available on Android and iOS.",
     experience:
-      "Real-time multiplayer architecture, matchmaking systems, SDK integration, UX/UI design, team collaboration, and mobile game publishing on Google Play and App Store.",
+      "Real-time multiplayer architecture, MVC, matchmaking systems, SDK integration, UX/UI design, team collaboration, and mobile game publishing on Google Play and App Store.",
     url: "https://play.google.com/store/apps/details?id=com.match3arena.puzzleforge&hl=vi",
   },
   {

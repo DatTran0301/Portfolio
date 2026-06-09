@@ -1,7 +1,12 @@
 "use client";
 
 import BgHome from "./../public/image/bg_home.svg";
-import { FacebookIcon, GithubIcon, LinkedinIcon } from "./components/SvgIcon";
+import {
+  DriveIcon,
+  FacebookIcon,
+  GithubIcon,
+  LinkedinIcon,
+} from "./components/SvgIcon";
 
 export default function Home() {
   console.log("Environment Variables:", process.env.TELEGRAM_BOT_TOKEN);
@@ -71,6 +76,11 @@ export default function Home() {
                   name: "LinkedIn",
                   icon: <LinkedinIcon className="w-5 h-5" />,
                   href: "https://linkedin.com/in/datthanhtran0301",
+                },
+                {
+                  name: "Drive",
+                  icon: <DriveIcon className="w-5 h-5" />,
+                  href: "https://drive.google.com/drive/folders/1UFGJImIZz3r0XXVz6xLKTUema8IL-I45?usp=sharing",
                 },
               ].map((social) => (
                 <a

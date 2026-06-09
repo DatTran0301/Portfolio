@@ -20,10 +20,16 @@ const experiencesData: Experience[] = [
         className="w-12 h-auto"
       />
     ),
-    name: "Unity Developer",
+    name: "Bliss Hub -  Unity Developer",
     years: "2025 - 2026",
-    description:
-      "BLISS HUB⁠ is a pioneering Social Game Studio focused on developing highly engaging games that not only entertain players, but also help them connect with one another in a natural and meaningful way.",
+    description: `BLISS HUB⁠ is a pioneering Social Game Studio focused on developing highly engaging games that not only entertain players, but also help them connect with one another in a natural and meaningful way.
+      
+    - Developed game logic, UI systems, and gameplay mechanics using Unity and C#.
+- Built reusable UI components and optimized user experience across different screen sizes.
+- Integrated third-party SDKs, APIs, advertisements, and analytics services.
+- Participated in feature planning, technical design, and code reviews.
+- Optimized performance and resolved issues for Android and iOS builds.
+      `,
   },
   {
     id: 2,
@@ -34,10 +40,16 @@ const experiencesData: Experience[] = [
         className="w-12 h-auto"
       />
     ),
-    name: "Unity Developer",
+    name: "FDS Soft - Unity Developer",
     years: "2024 - 2025",
-    description:
-      "Outsourcing Company Specializing in Web, App, and Software Development.",
+    description: `Outsourcing Company Specializing in Web, App, and Software Development.
+
+      - Developed AR mobile applications using Unity and AR technologies to enable interactive real-world experiences.
+- Implemented and optimized UI/UX across multiple mobile devices, ensuring consistency with design specifications and responsive user experiences.
+- Integrated AR features including image tracking, object placement, and real-world interaction mechanics.
+- Integrated AppsFlyer SDK for attribution tracking, analytics, and campaign performance monitoring.
+- Collaborated with backend developers to consume APIs, synchronize application data, and manage user interactions.
+- Maintained, optimized, and enhanced application performance for Android and iOS platforms`,
   },
   {
     id: 3,
@@ -48,10 +60,15 @@ const experiencesData: Experience[] = [
         className="w-12 h-auto"
       />
     ),
-    name: "Front-end Developer",
+    name: "New Star Paper - Front-end Developer",
     years: "2021 - 2024",
-    description:
-      "Develop and implement software solutions to streamline company management and sales processes for paper products.",
+    description: `Develop and implement software solutions to streamline company management and sales processes for paper products.
+
+                - Developed and maintained front-end features for ERP web and mobile applications.
+                - Built responsive and user-friendly interfaces following UI/UX best practices.
+                - Collaborated with stakeholders to refine requirements and improve user experience.
+                - Integrated APIs and optimized application performance across multiple devices.
+                `,
   },
   {
     id: 4,
@@ -62,14 +79,20 @@ const experiencesData: Experience[] = [
         className="w-12 h-auto"
       />
     ),
-    name: "Unity Developer Intern",
+    name: "Khuon Viet - Unity Developer Intern",
     years: "2018 - 2021",
-    description:
-      "A company specializing in assembling arcade systems and produce arcade gameswith a top-down perspective.",
+    description: `A company specializing in assembling arcade systems and produce arcade gameswith a top-down perspective.
+
+- Developed and maintained gameplay systems for 2D fish shooting arcade games using Unity.
+- Implemented new game features, mechanics, and content updates based on project requirements.
+- Optimized performance, memory usage, and rendering to ensure smooth operation on embedded Linux hardware with limited resources.
+- Collaborated with designers and team members to improve gameplay experience and game balance.
+- Troubleshot and resolved technical issues across different arcade machine configurations.`,
   },
 ];
 
 export default function ExperiencePage() {
+  console.log(JSON.stringify(experiencesData[2].description));
   return (
     <div className="min-h-screen bg-black text-white">
       {/* Experience Section */}
@@ -100,7 +123,12 @@ export default function ExperiencePage() {
                 </div>
                 <p className="text-white text-xl">{experience.years}</p>
               </div>
-              <p className="text-gray-400 mt-4">{experience.description}</p>
+              <div
+                className="text-gray-400 mt-4"
+                style={{ whiteSpace: "pre-line" }}
+              >
+                {experience.description}
+              </div>
             </div>
           </div>
         ))}
