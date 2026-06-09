@@ -8,6 +8,7 @@ interface Experience {
   name: string;
   years: string;
   description: string;
+  project: string;
 }
 
 const experiencesData: Experience[] = [
@@ -30,6 +31,7 @@ const experiencesData: Experience[] = [
 - Participated in feature planning, technical design, and code reviews.
 - Optimized performance and resolved issues for Android and iOS builds.
       `,
+    project: "Match 3 Arena",
   },
   {
     id: 2,
@@ -50,6 +52,7 @@ const experiencesData: Experience[] = [
 - Integrated AppsFlyer SDK for attribution tracking, analytics, and campaign performance monitoring.
 - Collaborated with backend developers to consume APIs, synchronize application data, and manage user interactions.
 - Maintained, optimized, and enhanced application performance for Android and iOS platforms`,
+    project: "Talentive",
   },
   {
     id: 3,
@@ -69,6 +72,7 @@ const experiencesData: Experience[] = [
                 - Collaborated with stakeholders to refine requirements and improve user experience.
                 - Integrated APIs and optimized application performance across multiple devices.
                 `,
+    project: "New Star Paper ERP",
   },
   {
     id: 4,
@@ -88,6 +92,7 @@ const experiencesData: Experience[] = [
 - Optimized performance, memory usage, and rendering to ensure smooth operation on embedded Linux hardware with limited resources.
 - Collaborated with designers and team members to improve gameplay experience and game balance.
 - Troubleshot and resolved technical issues across different arcade machine configurations.`,
+    project: "Space King",
   },
 ];
 
@@ -128,6 +133,10 @@ export default function ExperiencePage() {
                 style={{ whiteSpace: "pre-line" }}
               >
                 {experience.description}
+              </div>
+              <div className="text-gray-400 mt-4">
+                <span className="font-bold">Project: </span>
+                <span className="text-white">{experience.project}</span>
               </div>
             </div>
           </div>
